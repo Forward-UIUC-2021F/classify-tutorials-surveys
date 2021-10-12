@@ -4,9 +4,9 @@ This project builds a Random Forest classifier which determines whether research
 
 ## Functional Design
 * Queries for articles related to keyword, returns papers dict with metadata for each article
-* Saves paper into accessable format (likely .csv) for classifier to access and train from
+* Saves paper into accessable format (likely .csv) at specified filename for classifier to access and train from
 ```python
-fetch_papers(keyword_list):
+fetch_papers(keyword_list, filename):
   ...
   return
 ```
@@ -39,3 +39,5 @@ This module builds off the previous implementation of our classifier in google s
 The module takes an input of keywords, and finds articles related to that keyword to train the classifier on. This can be achieved by querying google scholar with the keyword and appending some information to improve our search (i.e. tutorial, survey), or using existing APIs which do the searching for us. Then, it saves these results to a format where the classifier can access and train from. All parameters and inputs are modular to allow different datasets to be used. We also test our classifier with folds from the training data (a technique called cross-validation).
 
 Finally, the purpose of this module is to use the classifier to find suitable articles for given keywords. We query for articles similar to the way we found training data, and determine the suitability by inputting our data into the classifier. This returns a final list of papers we represent suitable tutorial/survey articles related to a keyword or list of keywords.
+
+![design architecture](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/design_doc/DesignDocDiagram.png)
