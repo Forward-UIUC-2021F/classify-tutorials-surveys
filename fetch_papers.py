@@ -63,7 +63,7 @@ def write_papers_csv(papers, filename):
                 writer.writerow(obj)
             except Exception as e:
                 print('Exception with paper titled: {}. Error: {}'.format(paper['DN'], str(e)))
-                \
+              
 if __name__ == '__main__':
     kPaperCount = 100
     kw_file = open('keywords.txt', 'r', encoding='utf-8')
