@@ -1,3 +1,9 @@
+from fuzzywuzzy import fuzz
+import requests
+import json
+import csv
+import pandas as pd
+
 def mag_get_keyword_papers(keyword, num_papers):
     print("Searching papers including keyword {}...".format(keyword))
     paper_req_attrs = 'Y,Pt,DN,CC,S,BT'
