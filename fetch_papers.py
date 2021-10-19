@@ -10,6 +10,18 @@ def mag_get_keyword_papers(keyword, num_papers):
         paper['keyword'] = keyword
     return entities
 
+def delete_duplicates(papers):
+    title_set = set()
+    for paper in papers:
+        if 'title' not in paper:
+            continue
+        title = paper['title'].replace(',', '').replace("'", '').replace('-', '')
+        if title in title_set:
+            papers.remove(paper)
+        else:
+            title_set.add(title)
+    return papers
+
 def write_papers_csv(papers, filename):
     with open(filename, 'w', newline='') as csvfile:
         fieldnames = ['keyword', 'result_order', 'year', 'pdf', 'book', 'edu', 'org', 'com', 'other_domain',
