@@ -63,3 +63,20 @@ def write_papers_csv(papers, filename):
                 writer.writerow(obj)
             except Exception as e:
                 print('Exception with paper titled: {}. Error: {}'.format(paper['DN'], str(e)))
+                \
+if __name__ == '__main__':
+    kPaperCount = 100
+    kw_file = open('keywords.txt', 'r', encoding='utf-8')
+    training_data = []
+    num_keywords = 0
+    for line in kw_file.readlines():
+        num_keywords += 1
+        query_keyword = line.strip()
+        try:
+            papers = mag_get_keyword_papers(query_keyword, kPaperCount)
+            training_data += delete_duplicates(papers)  # deletes duplicate papers
+        except:
+            continue
+    write_papers_csv(training_data, 'training_papers.csv')
+    print("Obtained {} papers - {} duplicate(s)".format(str(len(training_data))), str(num_keywords * kPaperCount  - len(training_data))))
+
