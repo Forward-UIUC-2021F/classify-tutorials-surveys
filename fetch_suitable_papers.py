@@ -4,11 +4,19 @@ import joblib
 from fetch_training_papers import write_papers_csv, fetch_papers, get_fieldnames, write_papers_csv
 from classification import get_features, fill_missing_data
 
-
+'''
+Metadata to be saved with suitable articles
+'''
 def get_article_info():
     return ['keyword', 'id', 'year', 'title', 'src']
 
-
+'''
+Fills in missing data for DataFrame
+    Parameters:
+            df(DataFrame): original DataFrame
+    Returns:
+            df(DataFrame): DataFrame without missing values
+'''
 def fill_missing(df):
     df["year"].fillna("2010", inplace=True)
     df["pdf"].fillna("FALSE", inplace=True)
@@ -29,7 +37,12 @@ def fill_missing(df):
     df["review"].fillna("FALSE", inplace=True)
     return df
 
-
+'''
+Fetches suitable papers from MAKES API
+    Returns:
+            sub_df(DataFrame): DataFrame of papers and 
+            relevant metadata (specified by get_article_info)
+'''
 def get_suitable_papers():
     path = 'sample.csv'
     kPapersPerKeyword = 6
