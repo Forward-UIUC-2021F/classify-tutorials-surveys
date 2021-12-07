@@ -1,0 +1,154 @@
+facial expression recognition
+image compression
+aes
+open source
+systolic array
+commitment scheme
+security parameter
+identification
+signal processing
+field programmable gate array
+ict
+cost function
+video surveillance
+global convergence
+access control model
+query point
+mean average precision
+software testing
+polynomial time algorithm
+project management
+collaborative filter
+fault detection
+natural deduction
+dependency graph
+free variable
+pso
+quality
+empirical study
+soft computing
+web service
+concept lattice
+implementation
+camera calibration
+transition rule
+recurrent neural networks
+mimo
+concurrent program
+recommendation system
+parallel programming
+perception
+software quality
+static analysis
+separation logic
+power consumption
+mpi
+mobile learning
+discrete comput geom
+parameter estimation
+statistical machine translation
+java
+fuzzy number
+electronic commerce
+root mean square error
+domain decomposition
+energy
+hidden markov model
+network
+complex system
+logistic regression
+data visualization
+citation analysis
+utility function
+5g
+speech signal
+watermarking
+radial basis function neural network
+autonomic computing
+virtual enterprise
+argumentation framework
+lstm
+kinect
+transformation rule
+decomposition
+nonlinear programming
+membrane computing
+chromatic number
+pattern match
+internal node
+decision-making
+task allocation
+intelligent tutoring systems
+business model
+user-centered design
+markov chain monte carlo
+interval arithmetic
+semidefinite programming
+classical logic
+virtual organization
+hide unit
+fuzzy control
+privacy protection
+networks
+emotions
+discrete fourier transform
+formal language
+user modeling
+nonlinear dynamics
+concrete syntax
+source node
+communication complexity
+input image
+connectivity
+link prediction
+critical pair
+feature point
+game design
+unify modeling language
+compressed sensing
+fault-tolerance
+average precision
+matching
+manifold learning
+equal error rate
+visual attention
+parallel program
+deep neural networks
+agents
+resource management
+heuristic
+fuzzy clustering
+requirement engineer
+feedback
+stereo vision
+software process improvement
+grid resource
+ambient assisted living
+information retrieval system
+rsa
+lte
+learning analytics
+information technology
+quadratic programming
+analysis
+duality
+basic block
+propositional formula
+concurrency control
+real-time systems
+search space
+network management
+model predictive control
+minimum description length
+benchmarking
+software agent
+consensus
+elderly
+recommendation
+gpgpu
+motion vector
+robot
+deontic logic
+speech synthesis
+accuracy
+topic model
