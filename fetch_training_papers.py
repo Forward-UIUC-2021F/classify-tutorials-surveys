@@ -200,9 +200,9 @@ def delete_duplicates(papers):
 def fetch_papers(num_papers_per_keyword, num_keywords, filename):
     kw_file = open(filename, 'r', encoding='utf-8')
     training_data = []
-    num_keywords = 0
+    count_keywords = 0
     for line in kw_file.readlines():
-        if num_keywords == 550:
+        if count_keywords == num_keywords:
             break
         query_keyword = line.strip()
         # papers = mag_get_author_papers(author['id'], kPaperCount)
@@ -214,7 +214,7 @@ def fetch_papers(num_papers_per_keyword, num_keywords, filename):
         except:
             continue
         # papers = mag_get_author_papers(query_author_name, kPaperCount)
-        num_keywords += 1
+        count_keywords += 1
 
     return training_data
 
