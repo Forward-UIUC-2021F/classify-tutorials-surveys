@@ -16,6 +16,12 @@ HEADERS = {"Ocp-Apim-Subscription-Key": "0573b5f87b1f4966bc827e6b55896785"}
 QUERYSTRING = {"mode":"json%0A"}
 PAYLOAD = "{}"
 
+def get_fieldnames():
+    return ['keyword', 'id', 'result_order', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
+                  'org', 'com', 'other_domain',
+                  'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
+                  'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d', 'label', 'title', 'src']
+
 def _mag_get_papers_helper(ids, paper_req_attrs, filter_func):
 
     # Query author's papers
@@ -70,9 +76,7 @@ def mag_get_papers(ids):
 # Classifier
 def write_papers_csv(papers, filename):
     with open(filename, 'w', newline='') as csvfile:
-        fieldnames = ['keyword', 'id', 'result_order', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu', 'org', 'com', 'other_domain',
-                      'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
-                      'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d', 'label', 'title', 'src']
+        fieldnames = get_fieldnames()
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         curr_keyword = ""

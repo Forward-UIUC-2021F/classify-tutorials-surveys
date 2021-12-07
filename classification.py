@@ -8,6 +8,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 import joblib
 
+def get_features():
+    return ['id', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
+                  'org', 'com', 'other_domain',
+                  'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
+                  'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d']
+
+
 '''
 Gets the full feature list to be used as a training dataset
     Parameters:
@@ -20,20 +27,15 @@ def train(path):
     features = pd.read_csv(path)
     labels = np.array(features['label'])
 
-    # drops column keyword and label
-    features = features.drop('keyword', axis=1)
-    features = features.drop('label', axis=1)
-    features = features.drop('src', axis=1)
-    features = features.drop('result_order', axis=1)
-    features = features.drop('title', axis=1)
+    features = features[get_features()]
     features = np.array(features)
     # print(np.shape(features))
     # print(features)
 
-    f = []
-    for i in range(len(features)):
-        f.append(features[i])
-    return f, labels
+    # f = []
+    # for i in range(len(features)):
+    #     f.append(features[i])
+    return features, labels
 
 '''
 Gets the full feature list to be used as a training dataset
@@ -77,7 +79,7 @@ Fill in the missing data by dummy values that could help them get ignored
         path(string): path of the file to be modified
 '''
 def fill_missing_data(path):
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, encoding= 'unicode_escape')
     df["year"].fillna("2010", inplace=True)
     df["pdf"].fillna("FALSE", inplace=True)
     df["book"].fillna("FALSE", inplace=True)
