@@ -4,8 +4,10 @@ import joblib
 from fetch_training_papers import write_papers_csv, fetch_papers, get_fieldnames, write_papers_csv
 from classification import get_features, fill_missing_data
 
+
 def get_article_info():
     return ['keyword', 'id', 'year', 'title', 'src']
+
 
 def fill_missing(df):
     df["year"].fillna("2010", inplace=True)
@@ -27,16 +29,16 @@ def fill_missing(df):
     df["review"].fillna("FALSE", inplace=True)
     return df
 
+
 def get_suitable_papers():
     path = 'sample.csv'
-    path_to_save = 'suitable1.csv'
     kPapersPerKeyword = 6
     kKeywords = 75
     papers = fetch_papers(kPapersPerKeyword, kKeywords, "fetch_keywords.txt")
     write_papers_csv(papers, path)
     fill_missing_data(path)
 
-    df_original = pd.read_csv(path, encoding= 'unicode_escape')
+    df_original = pd.read_csv(path, encoding='unicode_escape')
     features = df_original[get_features()]
     features = np.array(features)
     try:
@@ -55,7 +57,10 @@ def get_suitable_papers():
     df_original['preds'] = predictions
     sub_df = df_original[relevant_features + ['preds']]
     sub_df = sub_df.loc[sub_df['preds'] == 1]
-    sub_df.to_csv(path_to_save)
+    return sub_df
+
 
 if __name__ == '__main__':
-    get_suitable_papers()
+    path_to_save = 'suitable1.csv'
+    df = get_suitable_papers()
+    df.to_csv(path_to_save)
