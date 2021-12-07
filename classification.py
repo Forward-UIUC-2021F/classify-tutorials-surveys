@@ -6,7 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-
+'''
+    Returns article features to be trained with in Random Forest
+'''
 def get_features():
     return ['id', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
             'org', 'com', 'other_domain',
@@ -106,6 +108,8 @@ def fill_missing_data(path):
 '''
     prints the average accuracy of the model with training data specified by filename
 '''
+
+
 def get_average_accuracy(filename):
     accs = []
     for i in range(250):

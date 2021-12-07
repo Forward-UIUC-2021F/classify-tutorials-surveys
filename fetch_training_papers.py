@@ -4,20 +4,27 @@ import csv
 
 # API Request variables
 HEADERS = {"Ocp-Apim-Subscription-Key": "0573b5f87b1f4966bc827e6b55896785"}
-QUERYSTRING = {"mode":"json%0A"}
+QUERYSTRING = {"mode": "json%0A"}
 PAYLOAD = "{}"
+
+'''
+    Returns all article metadata, including label and keyword
+'''
+
 
 def get_fieldnames():
     return ['keyword', 'id', 'result_order', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
-                  'org', 'com', 'other_domain',
-                  'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
-                  'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d', 'label', 'title', 'src']
+            'org', 'com', 'other_domain',
+            'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
+            'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d', 'label', 'title', 'src']
+
 
 def _mag_get_papers_helper(ids, paper_req_attrs, filter_func):
     # Query author's papers
     num_res = len(ids)
     match_cond = "Or(" + ",".join(["Id=" + str(id) for id in ids]) + ")"
-    papers_request = "https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?&count={}&expr={}&attributes={}".format(str(num_res), match_cond, paper_req_attrs)
+    papers_request = "https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?&count={}&expr={}&attributes={}".format(
+        str(num_res), match_cond, paper_req_attrs)
 
     response = requests.request("GET", papers_request, headers=HEADERS, data=PAYLOAD, params=QUERYSTRING)
 
@@ -39,12 +46,14 @@ def _mag_get_papers_helper(ids, paper_req_attrs, filter_func):
 
     return papers
 
+
 def mag_get_paper(id):
     # Query author's papers
     num_res = 1
     paper_req_attrs = 'Id,DN,IA,CC,Y,AA.AuId,AA.S,AA.AfN'
 
-    papers_request = "https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?&count={}&expr=Id={}&attributes={}".format(str(num_res), str(id), paper_req_attrs)
+    papers_request = "https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?&count={}&expr=Id={}&attributes={}".format(
+        str(num_res), str(id), paper_req_attrs)
 
     response = requests.request("GET", papers_request, headers=HEADERS, data=PAYLOAD, params=QUERYSTRING)
 
@@ -56,13 +65,31 @@ def mag_get_paper(id):
         print("API error: ")
         print(response.text)
 
+
+'''
+Retrieves papers from MAKES API which match inputted ids
+    Parameters:
+            ids(List[int]): ids of papers to be fetched
+    Returns:
+            Paper entities(dict)
+'''
+
+
 def mag_get_papers(ids):
     paper_req_attrs = 'Id,DN,IA,CC,Y,AA.AuId,AA.S,AA.AfN'
     filter_func = lambda t: 'IA' in t
     return _mag_get_papers_helper(ids, paper_req_attrs, filter_func)
 
 
-# Classifier
+'''
+Writes all papers and metadata to csv
+For details: https://docs.microsoft.com/en-us/academic-services/knowledge-exploration-service/reference-makes-api-entity-schema?view=makes-3.0
+    Parameters:
+            papers(dict): papers and their metadata
+            filename(str): file to write to
+'''
+
+
 def write_papers_csv(papers, filename):
     with open(filename, 'w', newline='') as csvfile:
         fieldnames = get_fieldnames()
@@ -162,12 +189,23 @@ def write_papers_csv(papers, filename):
             except Exception as e:
                 print('Exception with paper titled: {}. Error: {}'.format(paper['DN'], str(e)))
 
-# Classifier
+
+'''
+Searches keyword in MAKES API
+    Parameters:
+            keyword(str): keyword to search with
+            num_papers(int): number of papers to retrieve
+    Returns:
+            Papers and their metadata (dict)
+'''
+
+
 def mag_get_keyword_papers(keyword, num_papers):
     print("Searching papers including keyword {}...".format(keyword))
     paper_req_attrs = 'Id,Y,Pt,DN,CC,S,BT'
     papers_request = "https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?&count={}&" \
-                     "expr=Composite(F.FN='{}')&attributes={}".format(str(num_papers), str(keyword).lower(), paper_req_attrs)
+                     "expr=Composite(F.FN='{}')&attributes={}".format(str(num_papers), str(keyword).lower(),
+                                                                      paper_req_attrs)
     response = requests.request("GET", papers_request, headers=HEADERS, data=PAYLOAD, params=QUERYSTRING)
     # expr variables wrapped in single quotes must be lower case for the MAKES API to process #
     entities = json.loads(response.text)['entities']
@@ -175,7 +213,15 @@ def mag_get_keyword_papers(keyword, num_papers):
         paper['keyword'] = keyword
     return entities
 
-# remove papers with duplicate titles
+
+'''
+Deletes duplicates from papers based on title
+    Parameters:
+            papers(dict): papers from which duplicates are deleted
+    Returns:
+            papers(dict): dictionary without duplicates
+            delete_count(int): number of papers deleted 
+'''
 def delete_duplicates(papers):
     title_set = set()
     delete_count = 0
@@ -190,6 +236,15 @@ def delete_duplicates(papers):
             title_set.add(title)
     return papers, delete_count
 
+'''
+Fetches papers based on inputted parameters
+    Parameters:
+            num_papers_per_keyword(int): how many papers to fetch per keyword
+            num_keywords(int): num keywords in file to fetch papers for
+            filename(str): file to read keywords from
+    Returns:
+            training_data(dict): all papers and associated metadata
+'''
 def fetch_papers(num_papers_per_keyword, num_keywords, filename):
     kw_file = open(filename, 'r', encoding='utf-8')
     training_data = []
@@ -208,6 +263,7 @@ def fetch_papers(num_papers_per_keyword, num_keywords, filename):
         count_keywords += 1
 
     return training_data
+
 
 if __name__ == '__main__':
     kPaperCount = 5
