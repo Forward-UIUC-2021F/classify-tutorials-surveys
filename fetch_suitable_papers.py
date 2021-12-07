@@ -1,18 +1,8 @@
-from sklearn import datasets
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.ensemble import RandomForestClassifier
-from bs4 import BeautifulSoup
-import requests
 import joblib
-import re
-import csv
 from fetch_training_papers import write_papers_csv, fetch_papers, get_fieldnames, write_papers_csv
 from classification import get_features, fill_missing_data
-# from train_data import train
-# from train_data import train_scholars
 
 def get_article_info():
     return ['keyword', 'id', 'year', 'title', 'src']
@@ -40,12 +30,13 @@ def fill_missing(df):
 def get_suitable_papers():
     path = 'sample.csv'
     path_to_save = 'suitable1.csv'
-    papers = fetch_papers(6, 75, "fetch_keywords.txt")
+    kPapersPerKeyword = 6
+    kKeywords = 75
+    papers = fetch_papers(kPapersPerKeyword, kKeywords, "fetch_keywords.txt")
     write_papers_csv(papers, path)
     fill_missing_data(path)
 
     df_original = pd.read_csv(path, encoding= 'unicode_escape')
-    labels = np.array(df_original['label'])
     features = df_original[get_features()]
     features = np.array(features)
     try:
@@ -61,25 +52,10 @@ def get_suitable_papers():
         print("Page not loaded", e)
 
     relevant_features = get_article_info()
-    suitable_papers_df = pd.DataFrame(columns = relevant_features)
-    # print(df.head())
-
-
-    # for i in range(len(predictions)):
-    #     prediction = predictions[i]
-    #     if prediction == 1:
-    #         print('here')
-    #         suitable_papers_df = pd.concat([suitable_papers_df, df_original[relevant_features].iloc(i)])
     df_original['preds'] = predictions
     sub_df = df_original[relevant_features + ['preds']]
-    # print(sub_df.head())
-    print('rows: ', sub_df.shape[0])
     sub_df = sub_df.loc[sub_df['preds'] == 1]
-    print(sub_df)
     sub_df.to_csv(path_to_save)
-    print(suitable_papers_df)
-    # suitable_papers_df.to_csv(path_to_save)
 
-    print(len(predictions), features.shape)
-
-get_suitable_papers()
+if __name__ == '__main__':
+    get_suitable_papers()

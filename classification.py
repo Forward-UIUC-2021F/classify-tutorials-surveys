@@ -1,18 +1,17 @@
 import pandas as pd
 import numpy as np
-from IPython.display import display
 from sklearn.decomposition import PCA
 import time
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_extraction.text import CountVectorizer
 import joblib
+
 
 def get_features():
     return ['id', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
-                  'org', 'com', 'other_domain',
-                  'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
-                  'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d']
+            'org', 'com', 'other_domain',
+            'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
+            'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d']
 
 
 '''
@@ -23,19 +22,15 @@ Gets the full feature list to be used as a training dataset
         f: the list of features that would be used for training
         labels: the labels of what the paper was classified as
 '''
+
+
 def train(path):
     features = pd.read_csv(path)
     labels = np.array(features['label'])
-
     features = features[get_features()]
     features = np.array(features)
-    # print(np.shape(features))
-    # print(features)
-
-    # f = []
-    # for i in range(len(features)):
-    #     f.append(features[i])
     return features, labels
+
 
 '''
 Gets the full feature list to be used as a training dataset
@@ -45,6 +40,8 @@ Gets the full feature list to be used as a training dataset
     Returns:
         The accuracy of the classifier in correctly identifying suitable articles (labelled 1)
 # '''
+
+
 def test_scholars(feature, label):
     train_features, test_features, train_labels, test_labels = train_test_split(feature, label, test_size=0.20)
     rfc = RandomForestClassifier(n_estimators=500, random_state=int(time.time()))
@@ -62,24 +59,30 @@ def test_scholars(feature, label):
 
     return correct_broad * 100.0 / len(test_labels)
 
+
 '''
 Store the random forrest tree classifier.
     Parameters:
         feature(list): The dataset of features
         label(list): List of labels
 '''
+
+
 def train_scholars(feature, label):
     rfc = RandomForestClassifier(n_estimators=500)
     rfc.fit(feature, label)
     joblib.dump(rfc, "./random_forest.joblib")
+
 
 '''
 Fill in the missing data by dummy values that could help them get ignored
     Parameters:
         path(string): path of the file to be modified
 '''
+
+
 def fill_missing_data(path):
-    df = pd.read_csv(path, encoding= 'unicode_escape')
+    df = pd.read_csv(path, encoding='unicode_escape')
     df["year"].fillna("2010", inplace=True)
     df["pdf"].fillna("FALSE", inplace=True)
     df["book"].fillna("FALSE", inplace=True)
@@ -99,17 +102,22 @@ def fill_missing_data(path):
     df["review"].fillna("FALSE", inplace=True)
     df.to_csv(path, index=False)
 
-def get_average_accuracy():
+
+'''
+    prints the average accuracy of the model with training data specified by filename
+'''
+def get_average_accuracy(filename):
     accs = []
     for i in range(250):
-        # fill_missing_data('testing__.csv')
-        f, l = train('training_data_labeled_Updated.csv')
+        f, l = train(filename)
         train_scholars(f, l)
         x = test_scholars(f, l)
         accs.append(x)
         print(x, sum(accs) / len(accs))
 
-    print("average acc: ", sum(accs) / len(accs))  # average classifier accuracy
+    # print average classifier accuracy
+    print("average acc: ", sum(accs) / len(accs))
+
 
 def PCA_(filename):
     try:
@@ -130,5 +138,6 @@ def PCA_(filename):
     print(pca.singular_values_)
     print(pca.components_)
 
+
 if __name__ == '__main__':
-    get_average_accuracy()
+    get_average_accuracy('training_data_labeled_Updated.csv')

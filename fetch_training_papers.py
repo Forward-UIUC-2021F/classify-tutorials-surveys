@@ -1,18 +1,9 @@
-from fuzzywuzzy import fuzz
 import requests
 import json
-import glob
 import csv
-import re
-import pandas as pd
-import numpy as np
-from IPython.display import display
-from sklearn.decomposition import PCA
 
 # API Request variables
-# HEADERS = {"Ocp-Apim-Subscription-Key": "b0dbb13065164b6f8bcec38e89df091e"}
 HEADERS = {"Ocp-Apim-Subscription-Key": "0573b5f87b1f4966bc827e6b55896785"}
-
 QUERYSTRING = {"mode":"json%0A"}
 PAYLOAD = "{}"
 
@@ -23,7 +14,6 @@ def get_fieldnames():
                   'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d', 'label', 'title', 'src']
 
 def _mag_get_papers_helper(ids, paper_req_attrs, filter_func):
-
     # Query author's papers
     num_res = len(ids)
     match_cond = "Or(" + ",".join(["Id=" + str(id) for id in ids]) + ")"
@@ -50,7 +40,6 @@ def _mag_get_papers_helper(ids, paper_req_attrs, filter_func):
     return papers
 
 def mag_get_paper(id):
-
     # Query author's papers
     num_res = 1
     paper_req_attrs = 'Id,DN,IA,CC,Y,AA.AuId,AA.S,AA.AfN'
@@ -209,7 +198,6 @@ def fetch_papers(num_papers_per_keyword, num_keywords, filename):
         if count_keywords == num_keywords:
             break
         query_keyword = line.strip()
-        # papers = mag_get_author_papers(author['id'], kPaperCount)
         try:
             papers = mag_get_keyword_papers(query_keyword, num_papers_per_keyword)
             papers, duplicates = delete_duplicates(papers)  # deletes duplicate papers
@@ -217,7 +205,6 @@ def fetch_papers(num_papers_per_keyword, num_keywords, filename):
             print("Obtained {} papers - {} duplicate(s)".format(str(len(papers)), str(duplicates)))
         except:
             continue
-        # papers = mag_get_author_papers(query_author_name, kPaperCount)
         count_keywords += 1
 
     return training_data
