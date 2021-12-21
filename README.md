@@ -40,4 +40,5 @@ The module takes an input of keywords, and finds articles related to that keywor
 
 Finally, the purpose of this module is to use the classifier to find suitable articles for given keywords. We query for articles similar to the way we found training data, and determine the suitability by inputting our data into the classifier. This returns a final list of papers we represent suitable tutorial/survey articles related to a keyword or list of keywords.
 
-![design architecture](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/classify-mag/DesignDocDiagram.png)
+
+![design architecture](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/media/DesignDocDiagram.png)
