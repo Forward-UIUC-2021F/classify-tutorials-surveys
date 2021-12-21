@@ -2,6 +2,35 @@
 
 This project builds a Random Forest classifier which determines whether research papers are suitable by attempting to determine whether they are tutorial or survey articles. The module finds training data by mining google scholar, mag, and other sources for papers and associated metadata. Then, it trains the classifier on selected features. Using the trained classifier, we can once again query research sources for suitable articles, determining whether an arbitrary article is suitable based on its output when put in to our classifier.
 
+## Setup
+Install module dependencies with:
+'''
+  pip install -r requirements.txt
+'''
+
+## Structure
+'''
+matthew-kurapatti-classify-tutorials-surveys
+  - src/
+    - classification.py
+    - fetch_suitable_papers.py
+    - fetch_training_papers.py
+  - data/
+    - training_keywords.txt
+    - training_data.csv
+    - suitable_keywords.txt
+    - suitable_papers.csv  
+'''
+* `src/fetch_training_papers.py`: Acquires training data from MAG. Requires keyword inputs to query.
+* `src/classification.py`: Contains functions to train, test, and save model. Also contains function for PCA.
+* `src/fetch_suitable_papers.py`: Queries MAG and identifies suitable papers with loaded model
+
+* `data/training_keywords.txt`: Keywords to use when querying MAG to find training data
+* `data/training_data.csv`: Articles and metadata for training found with 'fetch_training_papers.py'
+* `data/suitable_keywords.txt`: Keywords to use when querying MAG to find potentially suitable articles
+* `data/suitable_papers.csv`: Articles identified as suitable after running 'fetch_suitable_papers.py'
+
+
 ## Functional Design
 * Queries for articles related to keyword, returns papers dict with metadata for each article
 * Saves paper into accessable format (likely .csv) at specified filename for classifier to access and train from
@@ -31,6 +60,8 @@ find_articles(classifier, keyword)
   ...
   return papers
 ```
+
+## Demo Video
 
 
 ## Algorithmic Design
