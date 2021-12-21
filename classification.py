@@ -10,7 +10,7 @@ import joblib
     Returns article features to be trained with in Random Forest
 '''
 def get_features():
-    return ['id', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
+    return ['result_order', 'year', 'HTML', "Text", 'pdf', 'DOC', 'other_type', 'book', 'edu',
             'org', 'com', 'other_domain',
             'exact_keyword_title', 'all_word', 'citation#', 'title_length', 'occurences_title', 'colon',
             'doc', 'survey', 'tutorial', 'review', 'position_k', 'position_d']
@@ -122,6 +122,12 @@ def get_average_accuracy(filename):
     # print average classifier accuracy
     print("average acc: ", sum(accs) / len(accs))
 
+def train_model(filename):
+    f, l = train(filename)
+    train_scholars(f, l)
+    accuracy = test_scholars(f, l)
+    print('Model trained. Accuracy: ', accuracy)
+    print('Model stored in ./random_forest.joblib')
 
 def PCA_(filename):
     try:
@@ -144,4 +150,5 @@ def PCA_(filename):
 
 
 if __name__ == '__main__':
-    get_average_accuracy('training_data_labeled_Updated.csv')
+    # get_average_accuracy('training_data_result_order.csv')
+    train_model('training_data_result_order.csv')

@@ -45,9 +45,9 @@ Fetches suitable papers from MAKES API
 '''
 def get_suitable_papers():
     path = 'sample.csv'
-    kPapersPerKeyword = 6
-    kKeywords = 75
-    papers = fetch_papers(kPapersPerKeyword, kKeywords, "fetch_keywords.txt")
+    kPapersPerKeyword = 50
+    kKeywords = 1
+    papers = fetch_papers(kPapersPerKeyword, kKeywords, "datastruct.txt")
     write_papers_csv(papers, path)
     fill_missing_data(path)
 
@@ -74,6 +74,7 @@ def get_suitable_papers():
 
 
 if __name__ == '__main__':
-    path_to_save = 'suitable1.csv'
+    path_to_save = 'suitable_demo.csv'
     df = get_suitable_papers()
     df.to_csv(path_to_save)
+    print("Saved suitable papers to: ", path_to_save)
