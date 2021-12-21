@@ -9,7 +9,7 @@ Install module dependencies with:
 '''
 
 ## Structure
-'''
+```
 matthew-kurapatti-classify-tutorials-surveys
   - src/
     - classification.py
@@ -20,7 +20,8 @@ matthew-kurapatti-classify-tutorials-surveys
     - training_data.csv
     - suitable_keywords.txt
     - suitable_papers.csv  
-'''
+```
+
 * `src/fetch_training_papers.py`: Acquires training data from MAG. Requires keyword inputs to query.
 * `src/classification.py`: Contains functions to train, test, and save model. Also contains function for PCA.
 * `src/fetch_suitable_papers.py`: Queries MAG and identifies suitable papers with loaded model
