@@ -48,7 +48,7 @@ def test_scholars(feature, label):
     train_features, test_features, train_labels, test_labels = train_test_split(feature, label, test_size=0.20)
     rfc = RandomForestClassifier(n_estimators=500, random_state=int(time.time()))
     rfc.fit(train_features, train_labels)
-    joblib.dump(rfc, "./random_forest.joblib")
+    joblib.dump(rfc, "../random_forest.joblib")
     predictions = rfc.predict(test_features)
     correct_broad = 0
     correct_exact = 0
@@ -73,7 +73,7 @@ Store the random forrest tree classifier.
 def train_scholars(feature, label):
     rfc = RandomForestClassifier(n_estimators=500)
     rfc.fit(feature, label)
-    joblib.dump(rfc, "./random_forest.joblib")
+    joblib.dump(rfc, "../random_forest.joblib")
 
 
 '''
@@ -150,5 +150,5 @@ def PCA_(filename):
 
 
 if __name__ == '__main__':
-    # get_average_accuracy('training_data_result_order.csv')
-    train_model('training_data_result_order.csv')
+    # get_average_accuracy('training_papers.csv')
+    train_model('../data/training_papers.csv')

@@ -268,5 +268,5 @@ def fetch_papers(num_papers_per_keyword, num_keywords, filename):
 if __name__ == '__main__':
     kPaperCount = 5
     kKeywords = 550
-    training_data = fetch_papers(kPaperCount, kKeywords, 'keywords.txt')
-    write_papers_csv(training_data, 'labeling_demo.csv')
+    training_data = fetch_papers(kPaperCount, kKeywords, '../data/training_keywords.txt')
+    write_papers_csv(training_data, '../labeling_demo.csv')

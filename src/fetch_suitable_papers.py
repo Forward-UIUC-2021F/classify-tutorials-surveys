@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import joblib
-from fetch_training_papers import write_papers_csv, fetch_papers, get_fieldnames, write_papers_csv
-from classification import get_features, fill_missing_data
+from fetch_training_papers import fetch_papers, write_papers_csv
+from src.classification import get_features, fill_missing_data
 
 '''
 Metadata to be saved with suitable articles
@@ -44,10 +44,10 @@ Fetches suitable papers from MAKES API
             relevant metadata (specified by get_article_info)
 '''
 def get_suitable_papers():
-    path = 'sample.csv'
+    path = '../sample.csv'
     kPapersPerKeyword = 50
     kKeywords = 1
-    papers = fetch_papers(kPapersPerKeyword, kKeywords, "datastruct.txt")
+    papers = fetch_papers(kPapersPerKeyword, kKeywords, "../data/suitable_keywords.txt")
     write_papers_csv(papers, path)
     fill_missing_data(path)
 
@@ -55,7 +55,7 @@ def get_suitable_papers():
     features = df_original[get_features()]
     features = np.array(features)
     try:
-        loaded_rf = joblib.load("./random_forest.joblib")
+        loaded_rf = joblib.load("../random_forest.joblib")
     except Exception as e:
         print("Model joblib file not found. Please train and test model with"
               "classification.py before running.")
@@ -74,7 +74,7 @@ def get_suitable_papers():
 
 
 if __name__ == '__main__':
-    path_to_save = 'suitable_demo.csv'
+    path_to_save = '../suitable_demo.csv'
     df = get_suitable_papers()
     df.to_csv(path_to_save)
     print("Saved suitable papers to: ", path_to_save)
