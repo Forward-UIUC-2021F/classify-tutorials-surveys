@@ -63,7 +63,7 @@ find_articles(classifier, keyword)
 ```
 
 ## Demo Video
-
+[![Watch](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/media/prev.png)](https://drive.google.com/file/d/1g9NhXUC32Ku_gfkUGqYZlo5APam9pQyt/view?usp=sharing)
 
 ## Algorithmic Design
 This module builds off the previous implementation of our classifier in google scholar. We expand to other data sources, adjusting our classifier to handle different inputs and datasets. We appropiately handle feature mismatches between and within datasets, and attempt to improve accuracy of the classifier by adjusting parameters, training, and testing methods.
