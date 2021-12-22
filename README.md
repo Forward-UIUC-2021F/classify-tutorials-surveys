@@ -1,4 +1,4 @@
-# classify-tutorials-surveys
+# matthew-kurapatti-classify-tutorials-surveys
 
 This project builds a Random Forest classifier which determines whether research papers are suitable by attempting to determine whether they are tutorial or survey articles. The module finds training data by mining google scholar, mag, and other sources for papers and associated metadata. Then, it trains the classifier on selected features. Using the trained classifier, we can once again query research sources for suitable articles, determining whether an arbitrary article is suitable based on its output when put in to our classifier.
 
@@ -63,7 +63,7 @@ find_articles(classifier, keyword)
 ```
 
 ## Demo Video
-[![Watch](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/media/prev.png)](https://drive.google.com/file/d/1g9NhXUC32Ku_gfkUGqYZlo5APam9pQyt/view?usp=sharing)
+[![Watch](https://github.com/Forward-UIUC-2021F/matthew-kurapatti-classify-tutorials-surveys/blob/media/prev.png)](https://drive.google.com/file/d/1g9NhXUC32Ku_gfkUGqYZlo5APam9pQyt/view?usp=sharing)
 
 ## Algorithmic Design
 This module builds off the previous implementation of our classifier in google scholar. We expand to other data sources, adjusting our classifier to handle different inputs and datasets. We appropiately handle feature mismatches between and within datasets, and attempt to improve accuracy of the classifier by adjusting parameters, training, and testing methods.
@@ -73,4 +73,4 @@ The module takes an input of keywords, and finds articles related to that keywor
 Finally, the purpose of this module is to use the classifier to find suitable articles for given keywords. We query for articles similar to the way we found training data, and determine the suitability by inputting our data into the classifier. This returns a final list of papers we represent suitable tutorial/survey articles related to a keyword or list of keywords.
 
 
-![design architecture](https://github.com/Forward-UIUC-2021F/classify-tutorials-surveys/blob/media/DesignDocDiagram.png)
+![design architecture](https://github.com/Forward-UIUC-2021F/matthew-kurapatti-classify-tutorials-surveys/blob/media/DesignDocDiagram.png)
