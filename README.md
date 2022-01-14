@@ -110,7 +110,7 @@ get_suitable_papers():
 ```
 
 ## Demo Video
-[![Watch](https://github.com/Forward-UIUC-2021F/matthew-kurapatti-classify-tutorials-surveys/blob/media/prev.png)](https://drive.google.com/file/d/1KVZCfRPXnpiCAEpdFNhrulkvGtQyl6-4/view?usp=sharing)
+[![Watch](https://github.com/Forward-UIUC-2021F/matthew-kurapatti-classify-tutorials-surveys/blob/media/prev.png)](https://drive.google.com/file/d/1YrV7EENj_0VUMUvBO1MqxMf9Im0eSVar/view?usp=sharing)
 
 ## Algorithmic Design
 This module builds off the previous implementation of our classifier in google scholar. We expand to another data sources, adjusting our classifier to handle different inputs and datasets. We use modular code to avoid feature mismatches between and within datasets, and attempt to improve accuracy of the classifier by adjusting parameters, training, and testing methods.
