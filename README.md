@@ -49,13 +49,6 @@ write_papers_csv(papers, filename):
   ...
 ```
 
-* Trains classifiers based on inputted file, using inputted features
-```python
-train(filename, feature_list):
-  ...
-  return
-```
-
 * Returns labels for all article metadata, including label and keyword
 ```python
 get_fieldnames():
