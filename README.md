@@ -1,9 +1,9 @@
 # classify-tutorials-surveys
 
-This module builds a Random Forest classifier which identifies suitable research tutorials and surveys. We begin by querying Microsoft Academic Graph (MAG) for research papers and associated metadata. Then, we analyze the data and train the classifier on selected features. We can once again query for articles, determining whether an arbitrary article is suitable based on our model's classification.
+This module builds a Random Forest Classifier which identifies suitable research tutorials and surveys. We acquire training data by querying Microsoft Academic Graph (MAG) for research papers and associated metadata. We perform regression analysis to understand data behavior and build the classifier based on these results (choosing features, selecting the model, considering hyper-parameters). Finally, we apply the model by querying for other research and outputting those classified as suitable.
 
 ## Setup
-Install module dependencies with:
+Install module dependencies.
 ```
   pip install -r requirements.txt
 ```
@@ -33,12 +33,20 @@ matthew-kurapatti-classify-tutorials-surveys
 
 
 ## Functional Design
-* Queries for articles related to keyword, returns papers dict with metadata for each article
+
+### Data Acquisition
+* Queries for training_data related to keywords in file 
+* Returns training_data dict with data for each paper
+```python
+fetch_papers(num_papers_per_keyword, num_keywords, filename):
+  ...
+  return training_data
+```
+
 * Saves training data into csv for classifier to read and train from
 ```python
-fetch_papers(keyword_list, filename):
+write_papers_csv(papers, filename):
   ...
-  return
 ```
 
 * Trains classifiers based on inputted file, using inputted features
@@ -48,18 +56,64 @@ train(filename, feature_list):
   return
 ```
 
-* Tests classifier based on split from training data (folding, cross validation) and returns accuracy
+* Returns labels for all article metadata, including label and keyword
 ```python
-test(classifier, papers):
+get_fieldnames():
   ...
-  return accuracy
+  return fieldname_list
 ```
 
-* Queries with keyword and outputs articles identified as suitable
+### EDA, Model Training & Testing
+
+* Performs Principal Component Analysis on training data
 ```python
-find_articles(classifier, keyword)
+PCA_(filename):
   ...
-  return papers
+```
+
+* Returns selected features to be used in model
+```python
+get_features():
+  ...
+  return feature_list
+```
+
+* Trains, tests, and saves model to joblib file
+```python
+build_model(filename):
+  ...
+```
+
+* Returns numpy arrays of features and labels from data in file path
+```python
+get_training_data(filename):
+  ...
+  return features, labels
+```
+
+* Creates train, test split
+* Builds and fits Random Forest Classifier to data
+* Saves model to joblib file
+* Returns model accuracy on testing split in terms of quantity correctly identified as suitable (outputted 1)
+```python
+train_test_scholars(feature, label):
+  ...
+  return model_accuracy
+```
+
+### Model Application
+* Returns fieldnames representing data to be saved with suitable articles
+```python
+get_article_info():
+  ...
+  return info_list
+```
+
+* Queries for papers, returns those identified as suitable in pandas DataFrame
+```python
+get_suitable_papers():
+  ...
+  return suitable_papers
 ```
 
 ## Demo Video

@@ -17,7 +17,7 @@ def get_features():
 
 
 '''
-Gets the full feature list to be used as a training dataset
+Gets the dataset and splits it into features and labels (X, Y)
     Parameters:
             path(string): path of the file to be used
     Returns:
@@ -26,7 +26,7 @@ Gets the full feature list to be used as a training dataset
 '''
 
 
-def train(path):
+def get_training_data(path):
     features = pd.read_csv(path)
     labels = np.array(features['label'])
     features = features[get_features()]
@@ -35,7 +35,7 @@ def train(path):
 
 
 '''
-Gets the full feature list to be used as a training dataset
+Trains, tests, and saves model with train-test split
     Parameters:
         feature(list): The dataset of features
         label(list): List of labels
@@ -44,7 +44,7 @@ Gets the full feature list to be used as a training dataset
 # '''
 
 
-def test_scholars(feature, label):
+def train_test_scholars(feature, label):
     train_features, test_features, train_labels, test_labels = train_test_split(feature, label, test_size=0.20)
     rfc = RandomForestClassifier(n_estimators=500, random_state=int(time.time()))
     rfc.fit(train_features, train_labels)
@@ -61,23 +61,8 @@ def test_scholars(feature, label):
 
     return correct_broad * 100.0 / len(test_labels)
 
-
 '''
-Store the random forrest tree classifier.
-    Parameters:
-        feature(list): The dataset of features
-        label(list): List of labels
-'''
-
-
-def train_scholars(feature, label):
-    rfc = RandomForestClassifier(n_estimators=500)
-    rfc.fit(feature, label)
-    joblib.dump(rfc, "../random_forest.joblib")
-
-
-'''
-Fill in the missing data by dummy values that could help them get ignored
+Data imputation
     Parameters:
         path(string): path of the file to be modified
 '''
@@ -113,19 +98,17 @@ def fill_missing_data(path):
 def get_average_accuracy(filename):
     accs = []
     for i in range(250):
-        f, l = train(filename)
-        train_scholars(f, l)
-        x = test_scholars(f, l)
+        f, l = get_training_data(filename)
+        x = train_test_scholars(f, l)
         accs.append(x)
         print(x, sum(accs) / len(accs))
 
     # print average classifier accuracy
     print("average acc: ", sum(accs) / len(accs))
 
-def train_model(filename):
-    f, l = train(filename)
-    train_scholars(f, l)
-    accuracy = test_scholars(f, l)
+def build_model(filename):
+    f, l = get_training_data(filename)
+    accuracy = train_test_scholars(f, l)
     print('Model trained. Accuracy: ', accuracy)
     print('Model stored in ./random_forest.joblib')
 
@@ -151,4 +134,4 @@ def PCA_(filename):
 
 if __name__ == '__main__':
     # get_average_accuracy('training_papers.csv')
-    train_model('../data/training_papers.csv')
+    build_model('../data/training_papers.csv')
