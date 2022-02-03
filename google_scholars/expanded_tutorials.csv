@@ -1,0 +1,463 @@
+keyword, url, authos, title, year, numberofcitation
+
+machine learning,https://tcxsproject.com.br/dev/Biblioteca%20Livros%20Hacker%20Gorpo%20Orko/Machine%20Learning%20Tutorial.pdf,['WL Chao'], Machine learning tutorial,2011,32
+
+machine learning,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2892746/,"['F Pereira', 'T Mitchell', 'M Botvinick']",Machine learning classifiers and fMRI: a tutorial overview,2009,1554
+
+machine learning,https://ieeexplore.ieee.org/abstract/document/7486188/,"['S Dev', 'B Wen', 'YH Lee', 'S Winkler']",Ground-based image analysis: A tutorial on machine-learning techniques and applications,2016,36
+
+genetic algorithm,https://www.researchgate.net/profile/Debnath-Bhattacharyya/publication/228569652_Genetic_Algorithm_A_Tutorial_Review/links/09e4150ff1c2e00cc2000000/Genetic-Algorithm-A-Tutorial-Review.pdf,"['DM Mukhopadhyay', 'MO Balitanas… ']", Genetic algorithm: A tutorial review,2009,50
+
+genetic algorithm,http://papers.cumincad.org/cgi-bin/works/paper/eaca,['L Davis '],Handbook of genetic algorithms,1991,10730
+
+genetic algorithm,https://en.cnki.com.cn/Article_en/CJFDTotal-JYRJ200402031.htm,['J Genlin '],Survey on genetic algorithm ,2004,107
+
+genetic algorithm,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1003.6618&rep=rep1&type=pdf,"['A Thengade', ' R Dondal ']", Genetic algorithm–survey paper,2012,49
+
+genetic algorithm,https://www.researchgate.net/profile/Rahila_Patel/publication/324132613_Genetic_Algorithm_Based_Clustering_A_Survey/links/5abfdf17aca27222c759b5a1/Genetic-Algorithm-Based-Clustering-A-Survey.pdf,"['RH Sheikh', 'MM Raghuwanshi… ']",Genetic algorithm based clustering: a survey,2008,132
+
+genetic algorithm,https://ieeexplore.ieee.org/abstract/document/294849/,"['M Srinivas', 'LM Patnaik']",Genetic algorithms: A survey,1994,2520
+
+deep learning,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.366.4088&rep=rep1&type=pdf,"['Y LeCun', 'M Ranzato']", Deep learning tutorial,2013,102
+
+deep learning,https://www.academia.edu/download/50993030/Deep_Learning_for_Remote_Sensing_Data.pdf,"['L Zhang', 'L Zhang', 'B Du']",Deep learning for remote sensing data: A technical tutorial on the state of the art,2016,1014
+
+deep learning,https://dl.acm.org/doi/abs/10.5555/2390500.2390505,"['R Socher', 'Y Bengio', 'CD Manning']",Deep learning for NLP ,2012,146
+
+deep learning,https://fardapaper.ir/mohavaha/uploads/2018/07/Fardapaper-A-survey-on-deep-learning-for-big-data.pdf,"['Q Zhang', 'LT Yang', ' Z Chen', 'P Li']",A survey on deep learning for big data,2018,549
+
+data mining,https://books.google.com/books?hl=en&lr=&id=v3ANDgAAQBAJ&oi=fnd&pg=PP1&dq=data+mining+tutorial&ots=rpfh-66Ue-&sig=eaR8DOSl1O3sDKrcRuc2-1Fts48,['RJ Roiger '],Data mining: a tutorial-based primer,2017,713
+
+data mining,http://georges.gardarin.free.fr/Cours_BD_Web/SQLServer_DM.pdf,"['S Paul', ' J MacLennan', ' Z Tang… ']", Data Mining Tutorial,2005,16
+
+data mining,https://pdfs.semanticscholar.org/1aad/a682962c7f895243f5c340ee33b2f571f337.pdf,['J Jackson '],Data mining; a conceptual overview,2002,215
+
+data mining,https://files.eric.ed.gov/fulltext/EJ1115376.pdf,"[""S D'Mello"", 'A Olney', 'N Person']",Mining collaborative patterns in tutorial dialogues.,2010,81
+
+data mining,https://cs.ou.edu/~database/documents/gg99.pdf,"['M Goebel', ' L Gruenwald ']",A survey of data mining and knowledge discovery software tools,1999,620
+
+data mining,https://arxiv.org/pdf/1211.5723,"['N Padhy', 'D Mishra', 'R Panigrahi']",The survey of data mining applications and feature scope,2012,297
+
+cloud computing,http://www.vldb.org/archives/website/2010/proceedings/files/papers/T02.pdf,"['D Agrawal', 'S Das', 'A El Abbadi']",Big data and cloud computing: new wine or just new bottles?,2010,143
+
+support vector machine,https://course.ccs.neu.edu/cs5100f11/resources/jakkula.pdf,['V Jakkula'], Tutorial on support vector machine ,2006,188
+
+support vector machine,http://i2pc.es/coss/Docencia/SignalProcessingReviews/Smola2004.pdf,"['AJ Smola', 'B Schölkopf']",A tutorial on support vector regression,2004,11067
+
+support vector machine,https://pdfs.semanticscholar.org/b60c/f0f3375e8192ebd86fc7af02c514eca3be4e.pdf,"['PH Chen', 'CJ Lin', 'B Schölkopf']",A tutorial on ν‐support vector machines,2005,521
+
+support vector machine,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.437.1036&rep=rep1&type=pdf,['A Pradhan'], Support vector machine-a survey,2012,83
+
+support vector machine,https://www.researchgate.net/profile/Janmenjoy_Nayak/publication/291748219_A_comprehensive_survey_on_support_vector_machine_in_data_mining_tasks_Applications_challenges/links/58db2c89aca272d8010ae3e4/A-comprehensive-survey-on-support-vector-machine-in-data-mining-tasks-Applications-challenges.pdf,"['J Nayak', 'B Naik', 'H Behera']", A comprehensive survey on support vector machine in data mining tasks: applications & challenges,2015,99
+
+support vector machine,https://ieeexplore.ieee.org/abstract/document/4623990/,['G Wang '],A survey on training algorithms for support vector machine classifiers,2008,47
+
+support vector machine,https://ieeexplore.ieee.org/abstract/document/7882747/,"['U Maulik', 'D Chakraborty']",Remote Sensing Image Classification: A survey of support-vector-machine-based advanced techniques,2017,90
+
+clustering,http://sigitwidiyanto.staff.gunadarma.ac.id/Downloads/files/38034/M8-Note-kMeans.pdf,['K Teknomo'], K-means clustering tutorial,2006,142
+
+clustering,https://www.academia.edu/download/33330615/tran2005.pdf,"['TN Tran', ' R Wehrens', 'LMC Buydens']",Clustering multispectral images: a tutorial,2005,140
+
+clustering,https://scholarsmine.mst.edu/cgi/viewcontent.cgi?article=1763&context=ele_comeng_facwork,"['R Xu', 'D Wunsch']",Survey of clustering algorithms,2005,6577
+
+model check,"ftp://nozdr.ru/biblio/kolxoz/Cs/CsLn/Modeling%20and%20Verification%20of%20Parallel%20Processes,%204%20school,%20MOVEP%202000(LNCS2067,%20Springer,%202001)(ISBN%203540427872)(227s).pdf#page=9",['S Merz'],Model checking: A tutorial overview,2000,202
+
+security,http://www.sis.pitt.edu/jjoshi/courses/IS2150/Fall11/CSIsurvey2008.pdf,"['R Richardson', ' CSI Director ']", CSI computer crime and security survey,2008,825
+
+security,https://books.google.com/books?hl=en&lr=&id=fLmgIGT18jIC&oi=fnd&pg=PP1&dq=security+survey&ots=q4F-tnjFIY&sig=HafGBJDPfcCWQpkhfdVrf4xgRZA,"['JF Broder', ' E Tucker ']", Risk analysis and the security survey,2011,74
+
+security,https://www.researchgate.net/profile/Richard_Hollinger2/publication/267683436_2002_National_Retail_Security_Survey_Final_Report/links/54d2827c0cf25017917e5d65.pdf,"['RC Hollinger', 'DA Dabney', ' G Lee', 'R Hayes']", National retail security survey,1990,122
+
+optimization,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.332.3150&rep=rep1&type=pdf,['H Hindi'],A tutorial on convex optimization,2004,132
+
+optimization,http://romisatriawahono.net/lecture/rm/survey/softcomputing/Boussaid%20-%20Optimization%20Metaheuristics%20-%202013.pdf,"['I Boussaïd', ' J Lepagnot', 'P Siarry']",A survey on optimization metaheuristics,2013,1244
+
+optimization,https://www.researchgate.net/profile/Jasbir_Arora4/publication/225153273_Survey_of_Multi-Objective_Optimization_Methods_for_Engineering/links/5462358d0cf2c0c6aec1ab30/Survey-of-Multi-Objective-Optimization-Methods-for-Engineering.pdf,"['RT Marler', ' JS Arora ']",Survey of multi-objective optimization methods for engineering,2004,4372
+
+feature selection,https://www.researchgate.net/profile/Samuel_Huang9/publication/275228384_Supervised_feature_selection_A_tutorial/links/5a1d720f0f7e9b2a531726a3/Supervised-feature-selection-A-tutorial.pdf,['SH Huang '], Supervised feature selection: A tutorial.,2015,64
+
+feature selection,http://romisatriawahono.net/lecture/rm/survey/machine%20learning/Chandrashekar%20-%20Feature%20Selection%20Methods%20-%202014.pdf,"['G Chandrashekar', 'F Sahin']",A survey on feature selection methods,2014,2554
+
+feature selection,https://www.sciencedirect.com/science/article/pii/S1877050916313047/pdf?md5=575f2dde690b9dbc82066a64864ba932&pid=1-s2.0-S1877050916313047-main.pdf&_valck=1,"['J Miao', ' L Niu ']",A survey on feature selection,2016,168
+
+neural network,https://www.researchgate.net/profile/Samreen_Sid/post/rookie/attachment/59d61d8cc49f478072e97144/AS%3A271736812048384%401441798512764/download/1993+Backpropagation+neural+networks+A+tutorial.pdf,['BJ Wythoff '],Backpropagation neural networks: a tutorial,1993,271
+
+neural network,http://metalab.uniten.edu.my/~abdrahim/mitm613/Jain1996_ANN%20-%20A%20Tutorial.pdf,"['AK Jain', 'J Mao', ' KM Mohiuddin ']",Artificial neural networks: A tutorial,1996,3313
+
+neural network,https://www.sciencedirect.com/science/article/pii/037015739190146D,['I Guyon'],Neural networks and applications tutorial,1991,32
+
+neural network,https://www.sciencedirect.com/science/article/pii/S2405844018332067,"['OI Abiodun', 'A Jantan', 'AE Omolara', ' KV Dada… ']", State-of-the-art in artificial neural network applications: A survey,2018,303
+
+neural network,https://pdfs.semanticscholar.org/7851/a608fbf8142f3082fec7f2ca19c30c425ad1.pdf,['S Timotheou'],The random neural network: a survey,2010,104
+
+simulation,https://repository.lib.ncsu.edu/bitstream/handle/1840.4/5259/1992_0020.pdf?sequence=1&isAllowed=y,['F Azadivar '],A tutorial on simulation optimization,1992,167
+
+simulation,https://ieeexplore.ieee.org/abstract/document/899706/,"['JR Swisher', ' PD Hyden', 'SH Jacobson… ']",A survey of simulation optimization techniques and procedures,2000,337
+
+simulation,https://www.academia.edu/download/52709276/workshop_1.pdf,"['S Siraj', 'A Gupta', ' R Badgujar ']", Network simulation tools survey,2012,147
+
+neural networks,http://metalab.uniten.edu.my/~abdrahim/mitm613/Jain1996_ANN%20-%20A%20Tutorial.pdf,"['AK Jain', 'J Mao', ' KM Mohiuddin ']",Artificial neural networks: A tutorial,1996,3313
+
+neural networks,https://www.researchgate.net/profile/Samreen_Sid/post/rookie/attachment/59d61d8cc49f478072e97144/AS%3A271736812048384%401441798512764/download/1993+Backpropagation+neural+networks+A+tutorial.pdf,['BJ Wythoff '],Backpropagation neural networks: a tutorial,1993,271
+
+neural networks,https://arxiv.org/pdf/1810.01989,"['W Xiang', 'P Musau', ' AA Wild', 'DM Lopez… ']","Verification for machine learning, autonomy, and neural networks survey",2018,41
+
+artificial intelligence,https://arxiv.org/pdf/1307.3091,"['MGB Marietto', ' RV de Aguiar', ' GO Barbosa… ']",Artificial intelligence markup language: a brief tutorial,2013,51
+
+ontology,https://ebooks.iospress.nl/pdf/doi/10.3233/SSW200032,"['C Shimizu', 'P Hitzler', 'A Krisnadhi']",Modular ontology modeling: A tutorial,2020,7
+
+ontology,https://www.researchgate.net/profile/Marko_Grobelnik/publication/228857266_A_survey_of_ontology_evaluation_techniques/links/0046352655ed1ac5ed000000.pdf,"['J Brank', 'M Grobelnik', 'D Mladenic']", A survey of ontology evaluation techniques,2005,850
+
+ontology,https://mds.marshall.edu/cgi/viewcontent.cgi?article=1004&context=wdcs_faculty,"['N Choi', 'IY Song', 'H Han']",A survey on ontology mapping,2006,767
+
+wireless sensor network,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.453.1867&rep=rep1&type=pdf,"['S Rein', 'M Reisslein']",Low-memory wavelet transforms for wireless sensor networks: A tutorial,2010,93
+
+wireless sensor network,https://sites.google.com/a/unomaha.edu/ahvazsite/storage-current-research/08-yick-wireless-sensor-network-localization-coverage-survey-good.pdf,"['J Yick', 'B Mukherjee', 'D Ghosal']",Wireless sensor network survey,2008,7870
+
+wireless sensor network,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.686.8840&rep=rep1&type=pdf,"['K Venkatraman', ' JV Daniel… ']", Various attacks in wireless sensor network: Survey,2013,61
+
+logic program,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.2679&rep=rep1&type=pdf,['JP Gallagher'],Tutorial on specialisation of logic programs,1993,222
+
+logic program,https://search.proquest.com/openview/a32aa47a2da6cfd03599f91bc6192b6b/1?pq-origsite=gscholar&cbl=37787,['RE Davis '],Logic programming and prolog: a tutorial,1985,55
+
+logic program,https://iris.unife.it/handle/11392/2350948,"['F Riguzzi', 'G Cota']",Probabilistic logic programming tutorial,2016,5
+
+virtual reality,https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1460-2466.1992.tb00811.x,['F Biocca'],Virtual reality technology: A tutorial,1992,235
+
+virtual reality,https://www.sciencedirect.com/science/article/pii/S0924980X97000866,"['M Carrozzo', 'F Lacquaniti']",Virtual reality: a tutorial,1998,30
+
+virtual reality,https://link.springer.com/content/pdf/10.1007/s11432-009-0066-0.pdf,['Q Zhao '],A survey on virtual reality,2009,107
+
+virtual reality,http://www.ijac.net/en/article/2009/4,"['NN Zhou', 'YL Deng']",Virtual reality: A state-of-the-art survey,2009,66
+
+particle swarm optimization,https://www.sciencedirect.com/science/article/pii/S0169743915002117,"['F Marini', 'B Walczak']",Particle swarm optimization . A tutorial,2015,478
+
+particle swarm optimization,https://eclass.hmu.gr/modules/document/file.php/TP287/Evolutionary%20Computation/CIClassCh03_pso_tutorial.pdf,['J Blondin '], Particle swarm optimization: A tutorial,2009,94
+
+particle swarm optimization,https://www.researchgate.net/profile/Alaa_Tharwat/publication/325575025_Particle_Swarm_Optimization-A_Tutorial/links/5b1689944585151f91fb916c/Particle-Swarm-Optimization-A-Tutorial.pdf,"['A Tharwat', 'T Gaber', 'AE Hassanien… ']",Particle swarm optimization: a tutorial,-1,14
+
+particle swarm optimization,https://www.academia.edu/download/33797830/teori_dari_PSO.pdf,['B Santosa'], Tutorial particle swarm optimization,2006,41
+
+particle swarm optimization,https://www.jstage.jst.go.jp/article/transinf/E92.D/7/E92.D_7_1354/_pdf,['K Kameyama'],Particle swarm optimization-a survey,2009,117
+
+privacy,https://www.researchgate.net/profile/Minzhu_Xie2/publication/220908334_A_Practical_Parameterized_Algorithm_for_the_Individual_Haplotyping_Problem_MLF/links/0deec5328063473edc000000/A-Practical-Parameterized-Algorithm-for-the-Individual-Haplotyping-Problem-MLF.pdf#page=12,['C Dwork'],Differential privacy: A survey of results,2008,7045
+
+privacy,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.2915&rep=rep1&type=pdf,"['C Eubank', 'M Melara', 'D Perez']", Shining the floodlights on mobile web tracking-a privacy survey,2013,29
+
+scheduling,http://www.bloechligair.ch/science/staffSchedulingTutorial.ps,['I Blöchliger '],Modeling staff scheduling problems. A tutorial,2004,137
+
+scheduling,https://pubsonline.informs.org/doi/abs/10.1287/opre.25.1.45,"['SS Panwalkar', ' W Iskander ']",A survey of scheduling rules,1977,1582
+
+face recognition,https://www.koreascience.or.kr/journal/view.jsp?kj=E1JBB0&py=2009&vnc=v5n2&sp=41,"['R Jafri', 'HR Arabnia']", A survey of face recognition techniques,2009,804
+
+logic programming,https://www.sciencedirect.com/science/article/pii/0743106694900337,"['J Jaffar', 'MJ Maher']", Constraint logic programming: A survey,1994,1893
+
+logic programming,https://books.google.com/books?hl=en&lr=&id=bTGQ9MQnjiAC&oi=fnd&pg=PR13&dq=logic+programming+tutorial&ots=uQQsVENJ07&sig=g6ED-u8Yx3iDPW-pKQ8pVmybG9I,['SH Nienhuys'], Foundations of inductive logic programming,1997,669
+
+logic programming,https://www.informatik.uni-ulm.de/pm/fileadmin/pm/home/fruehwirth/pisa/clp-intro-ecrc-93-05.pdf,"['T Frühwirth', ' A Herold', ' V Küchenhoff… ']",Constraint logic programming,1992,144
+
+logic programming,https://search.proquest.com/openview/a32aa47a2da6cfd03599f91bc6192b6b/1?pq-origsite=gscholar&cbl=37787,['RE Davis '],Logic programming and prolog: a tutorial,1985,55
+
+augmented reality,https://ir.canterbury.ac.nz/bitstream/handle/10092/15494/ar-billinghurst-29Mar2015-journal.pdf?sequence=2,"['M Billinghurst', 'A Clark', 'G Lee']",A survey of augmented reality,2015,817
+
+big data,https://www.academia.edu/download/46622259/Watson__Tutorial__Big_Data_Analytics__Concepts_Technologies_and_Applica.pdf,['HJ Watson'],"Tutorial: Big data analytics: Concepts, technologies, and applications",2014,347
+
+big data,https://sci2s.ugr.es/sites/default/files/1-s2.0-S1566253517305912-main.pdf,['S Ramírez'],Big Data: Tutorial and guidelines on information and process fusion for analytics algorithms with MapReduce,2018,117
+
+big data,https://dl.acm.org/doi/abs/10.1145/2623330.2630811,"['G Cormode', 'N Duffield']",Sampling for big data: a tutorial,2014,48
+
+big data,http://vldb.org/pvldb/vol5/p2014_jensdittrich_vldb2012.pdf,"['J Dittrich', 'JA Quiané']",Efficient big data processing in Hadoop MapReduce,2012,327
+
+big data,http://section.iaesonline.com/index.php/IJEEI/article/view/195/131,"['PSGA Sri', 'M Anusha']",Big data-survey,2016,28
+
+information retrieval,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.33.1855,['E Greengrass '],Information retrieval: A survey,2000,201
+
+natural language processing,https://academic.oup.com/jamia/article/18/5/544/829676,"['PM Nadkarni', 'L Ohno']",Natural language processing: an introduction,2011,681
+
+natural language processing,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.4660&rep=rep1&type=pdf,['S Ahmad '], Tutorial on natural language processing,2007,17
+
+feature extraction,http://clopinet.com/fextract-book/,"['I Guyon', 'S Gunn', ' M Nikravesh', 'LA Zadeh']", Feature extraction: foundations and applications,2008,2246
+
+feature extraction,https://ieeexplore.ieee.org/abstract/document/1449207/,['MD Levine'],Feature extraction: A survey,1969,194
+
+feature extraction,https://www.researchgate.net/profile/Shifei_Ding/publication/220637892_A_survey_on_feature_extraction_for_pattern_recognition/links/004635362454790ac8000000/A-survey-on-feature-extraction-for-pattern-recognition.pdf,"['S Ding', ' H Zhu', ' W Jia', ' C Su ']",A survey on feature extraction for pattern recognition,2012,91
+
+wireless sensor networks,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.453.1867&rep=rep1&type=pdf,"['S Rein', 'M Reisslein']",Low-memory wavelet transforms for wireless sensor networks: A tutorial,2010,93
+
+wireless sensor networks,https://disalw3.epfl.ch/teaching/swarm_intelligence/ay_2006-07/exercises/SI_06-07_labhwk09_tutorial.pdf,"['D Estrin', 'A Sayeed', 'M Srivastava']", Wireless sensor networks,2002,162
+
+wireless sensor networks,https://www.sciencedirect.com/science/article/pii/S0140366414001911,"['R Silva', 'JS Silva', 'F Boavida']",Mobility in wireless sensor networks–survey and proposal,2014,105
+
+independent component analysis,https://books.google.com/books?hl=en&lr=&id=P0rROE-WFCwC&oi=fnd&pg=PR11&dq=independent+component+analysis+tutorial&ots=ku5mfgoLoU&sig=HbCXMtJraT3__4cJfqSub4J19VA,['JV Stone'],Independent component analysis: a tutorial introduction,2004,610
+
+independent component analysis,https://arxiv.org/pdf/1404.2986,['J Shlens'],A tutorial on independent component analysis,2014,46
+
+independent component analysis,https://arxiv.org/pdf/1404.1100&sa=U&ved=2ahUKEwi57Mfr0ZDpAhWtF6YKHfSxAck4ChAWMAZ6BAgEEAE&usg=AOvVaw2ccduDFnmcXvF-iGE-VXIM,['J Shlens'],A tutorial on principal component analysis,2014,2770
+
+independent component analysis,http://pzs.dstu.dp.ua/DataMining/ica/bibl/Stone.pdf,['JV Stone'], Independent component analysis,2004,242
+
+independent component analysis,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.3488,['A Hyvärinen'],Survey on independent component analysis,1999,1849
+
+independent component analysis,https://ieeexplore.ieee.org/abstract/document/1027042/,['KN Leach '],A survey paper on independent component analysis,2002,23
+
+mobile robot,https://www.researchgate.net/profile/Urbano_Nunes/publication/220104213_Lie_algebra_application_to_mobile_robot_control_A_tutorial/links/00463520d58832819a000000.pdf,"['P Coelho', 'U Nunes']", Lie algebra application to mobile robot control: a tutorial,2003,90
+
+mobile robot,https://www.jstage.jst.go.jp/article/jrsj1983/21/3/21_3_282/_pdf,"['A Yamashita', 'H Asama', ' T Arai', 'J Ota… ']",A survey on trends of mobile robot mechanisms,2003,19
+
+business process,https://www.sciencedirect.com/science/article/pii/S0272696396001003,"['TR Rohleder', ' EA Silver ']",A tutorial on business process improvement,1997,136
+
+fuzzy logic,https://www.researchgate.net/profile/Ljubomir_Jacic2/post/What_is_the_best_book_for_learning_and_teaching_Fuzzy_logic/attachment/59d62bd8c49f478072e9db25/AS:273538471137283@1442228061710/download/Tutorial+On+Fuzzy+Logic.pdf,['J Jantzen'], Tutorial on fuzzy logic,1998,200
+
+fuzzy logic,https://books.google.com/books?hl=en&lr=&id=fRHEvLhYzecC&oi=fnd&pg=PR5&dq=fuzzy+logic+tutorial&ots=-v53ze6rCJ&sig=pkoJuNwLD1pRJ0_FWJhbOrkN4mw,"['R Bělohlávek', ' GJ Klir ']", Concepts and fuzzy logic,2011,120
+
+fuzzy logic,http://fa.mie.sut.ac.ir/Downloads/AcademicStaff/5/Courses/17/Fuzzy%20Logic%20in%20Geology%20(2004).pdf#page=21,['GJ Klir '],Fuzzy logic: a specialized tutorial,2004,11
+
+fuzzy logic,https://www.sciencedirect.com/science/article/pii/002002558590026X,['M Sugeno '],An introductory survey of fuzzy control,1985,1591
+
+image segmentation,https://www.academia.edu/download/47879147/Segmentation_tutorial.pdf,['YH Wang '], Tutorial: image segmentation,2010,65
+
+image segmentation,https://dl.acm.org/doi/abs/10.1561/0600000052,"['Y Furukawa', 'C Hernández']", Multi-view stereo: A tutorial,2015,340
+
+image segmentation,http://haralick-org.torahcode.us/book_chapters/image_segmentation_survey_faugeras.pdf,['RM Haralick'],Image segmentation survey,1983,69
+
+image segmentation,http://www.ttcenter.ir/ArticleFiles/ENARTICLE/3405.pdf,"['KS Fu', ' JK Mui ']",A survey on image segmentation,1981,1806
+
+image segmentation,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.28.1325,"['W Skarbek', 'A Koschan', ' T Bericht', ' Z Veroffentlichung ']",Colour image segmentation-a survey,1994,495
+
+image segmentation,https://www.sciencedirect.com/science/article/pii/S1877050915028574/pdf?md5=a25302eed1f6b6620dcd1de0a02c4f56&pid=1-s2.0-S1877050915028574-main.pdf,"['NM Zaitoun', 'MJ Aqel']",Survey on image segmentation techniques,2015,323
+
+internet of things,https://www.tandfonline.com/doi/abs/10.1080/19393555.2018.1458258,"['D Mendez Mena', 'I Papapanagiotou… ']",Internet of things: Survey on security,2018,54
+
+segmentation,https://www.academia.edu/download/47879147/Segmentation_tutorial.pdf,['YH Wang '], Tutorial: image segmentation,2010,65
+
+segmentation,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.28.1325,"['W Skarbek', 'A Koschan', ' T Bericht', ' Z Veroffentlichung ']",Colour image segmentation-a survey,1994,495
+
+segmentation,http://www.ttcenter.ir/ArticleFiles/ENARTICLE/3405.pdf,"['KS Fu', ' JK Mui ']",A survey on image segmentation,1981,1806
+
+convolutional neural network,http://www.brain.edusoft.ro/index.php/brain/article/viewFile/804/933,['O Deperlioglu'],Classification of phonocardiograms with convolutional neural networks,2018,29
+
+convolutional neural network,https://en.cnki.com.cn/Article_en/CJFDTotal-JSJY201609029.htm,"['YD Li', ' ZB Hao', ' H Lei ']",Survey of convolutional neural network,2016,62
+
+convolutional neural network,https://arxiv.org/pdf/1804.11191,"['Z Qin', 'F Yu', 'C Liu', 'X Chen']",How convolutional neural network see the world-A survey of convolutional neural network visualization methods,2018,73
+
+temporal logic,https://orbi.uliege.be/bitstream/2268/18956/2/Wol00-fmpa.pdf,['P Wolper'],Constructing Automata from Temporal Logic Formulas: A Tutorial⋆,2000,140
+
+temporal logic,https://www.sciencedirect.com/science/article/pii/0169755292901094,['R Gotzhein '],Temporal logic and applications—a tutorial,1992,73
+
+temporal logic,https://people.eecs.berkeley.edu/~sseshia/fmee/lectures/EECS294-98_Spring2014_STL_Lecture.pdf,['A Donzé'],On signal temporal logic,2013,21
+
+temporal logic,https://ieeexplore.ieee.org/abstract/document/4567924/,['A Pnueli '],The temporal logic of programs,1977,6952
+
+hash function,https://link.springer.com/content/pdf/10.1007/978-3-662-44757-4.pdf,"['JP Aumasson', 'W Meier', 'RCW Phan', ' L Henzen ']", The hash function BLAKE,2014,35
+
+hash function,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.587.7541&rep=rep1&type=pdf,"['R Purohit', ' U Mishra', ' A Bansal ']", A survey on recent cryptographic hash function designs,2013,12
+
+hash function,http://journals.dbuniversity.ac.in/ojs/index.php/AJET/article/download/15/pdf_2,"['A Neelima', 'KM Singh']",A short survey on perceptual hash function,2014,13
+
+usability,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1027.9971&rep=rep1&type=pdf,['MP Couper '],Usability evaluation of computer-assisted survey instruments,2000,176
+
+usability,https://www.researchgate.net/profile/Asbjorn_Folstad/publication/241622941_Analysis_in_practical_usability_evaluation_A_survey_study/links/55379b1c0cf218056e9564b3/Analysis-in-practical-usability-evaluation-A-survey-study.pdf,"['A Følstad', 'E Law', 'K Hornbæk']",Analysis in practical usability evaluation: a survey study,2012,83
+
+computer vision,https://www.academia.edu/download/41662664/Performance_Characterization_in_Computer20160127-3613-18lmcza.pdf,"['AF Clark', ' C Clark ']", Performance characterization in computer vision a tutorial,1999,31
+
+computer vision,https://academiccommons.columbia.edu/doi/10.7916/D8N87MJZ/download,"['KA Tarabanis', 'PK Allen', ' RY Tsai ']",A survey of sensor planning in computer vision,1995,611
+
+reinforcement learning,https://apps.dtic.mil/sti/pdfs/ADA323194.pdf,"['ME Harmon', ' SS Harmon ']",Reinforcement Learning: A Tutorial.,1997,182
+
+reinforcement learning,https://www.ias.ac.in/public/Volumes/sadh/019/06/0851-0889.pdf,"['SS Keerthi', 'B Ravindran']",A tutorial survey of reinforcement learning,1994,75
+
+reinforcement learning,http://d-scholarship.pitt.edu/10255/1/MinChi_Dissertation_Dec2009.pdf,"['M Chi', 'K VanLehn', 'D Litman']",Do micro-level tutorial decisions matter: Applying reinforcement learning to induce pedagogical tutorial tactics,2010,89
+
+reinforcement learning,https://par.nsf.gov/servlets/purl/10078417,"['B Kiumarsi', 'KG Vamvoudakis… ']",Optimal and autonomous control using reinforcement learning: A survey,2017,247
+
+reinforcement learning,https://apps.dtic.mil/sti/pdfs/ADA323194.pdf,"['ME Harmon', ' SS Harmon ']",Reinforcement Learning: A Tutorial.,1997,182
+
+reinforcement learning,https://www.ias.ac.in/public/Volumes/sadh/019/06/0851-0889.pdf,"['SS Keerthi', 'B Ravindran']",A tutorial survey of reinforcement learning,1994,75
+
+reinforcement learning,http://d-scholarship.pitt.edu/10255/1/MinChi_Dissertation_Dec2009.pdf,"['M Chi', 'K VanLehn', 'D Litman']",Do micro-level tutorial decisions matter: Applying reinforcement learning to induce pedagogical tutorial tactics,2010,89
+
+reinforcement learning,https://par.nsf.gov/servlets/purl/10078417,"['B Kiumarsi', 'KG Vamvoudakis… ']",Optimal and autonomous control using reinforcement learning: A survey,2017,247
+
+genetic algorithms,http://papers.cumincad.org/cgi-bin/works/paper/eaca,['L Davis '],Handbook of genetic algorithms,1991,10730
+
+genetic algorithms,http://gpbib.cs.ucl.ac.uk/gecco2007/docs/p3205.pdf,['ED Goodman '],Introduction to genetic algorithms,2014,49
+
+genetic algorithms,https://ieeexplore.ieee.org/abstract/document/294849/,"['M Srinivas', 'LM Patnaik']",Genetic algorithms: A survey,1994,2520
+
+genetic algorithms,http://aisii.azc.uam.mx/mcbc/Cursos/IntCompt/Lectura%2011.%20AGeneticos.pdf,['M Tomassini'],A survey of genetic algorithms,1995,141
+
+turing machine,https://arxiv.org/pdf/1110.2230,"['T Neary', 'D Woods']",The complexity of small universal Turing machines: a survey,2012,27
+
+access control,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.157.9610&rep=rep1&type=pdf,['M Abadi'],Logic in access control ,2009,25
+
+access control,https://www.researchgate.net/profile/Michelle_Mazurek/publication/254005197_Tag_you_can_see_it_Using_tags_for_access_control_in_photo_sharing/links/546c89dc0cf2c4819f2195d8/Tag-you-can-see-it-Using-tags-for-access-control-in-photo-sharing.pdf,"['P Klemperer', ' Y Liang', 'M Mazurek', 'M Sleeper… ']","Tag, you can see it! Using tags for access control in photo sharing",2012,168
+
+mobile agent,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.44.7871&rep=rep1&type=pdf,"['KH Kramer', ' N Minar', 'P Maes']",Tutorial: mobile software agents for dynamic routing,1999,72
+
+mobile agent,https://core.ac.uk/download/pdf/21747420.pdf,"['E Kranakis', ' D Krizanc', 'S Rajsbaum']",Mobile agent rendezvous: A survey,2006,89
+
+social media,https://www.aclweb.org/anthology/N15-4005.pdf,"['S Volkova', 'B Van Durme', 'D Yarowsky… ']",Social media predictive analytics,2015,9
+
+semantic web,http://www.krnet.or.kr/board/data/dprogram/792/T2-1.pdf,['HG Kim '], Semantic Web,2003,218
+
+semantic web,https://www.researchgate.net/profile/Michael_Stollberg/publication/4186768_Semantic_Web_Services_Tutorial/links/54ad72ba0cf2828b29fc9de5.pdf,"['M Stollberg', 'A Haller']", Semantic Web Services Tutorial.,2005,26
+
+nash equilibrium,https://link.springer.com/article/10.1007/s11831-020-09475-5,"['H Li', ' X Wang', ' F Jia', ' Y Li', ' Q Chen ']",A Survey of Nash Equilibrium Strategy Solving Based on CFR,2020,-1
+
+sensor network,https://sites.google.com/a/unomaha.edu/ahvazsite/storage-current-research/08-yick-wireless-sensor-network-localization-coverage-survey-good.pdf,"['J Yick', 'B Mukherjee', 'D Ghosal']",Wireless sensor network survey,2008,7870
+
+association rule,https://www.academia.edu/download/36906046/A_survey_on_association_rule_mining.pdf,"['T Karthikeyan', ' N Ravikumar ']", A survey on association rule mining,2014,63
+
+description logic,https://en.cnki.com.cn/Article_en/CJFDTotal-JSJA200601053.htm,['SHILSUN Ji'],Description Logic Survey ,2006,16
+
+genetic programming,https://www.academia.edu/download/61615639/GP20191227-8969-9rua5f.pdf,"['JR Koza', 'R Poli']", A genetic programming tutorial,2003,48
+
+genetic programming,http://gpbib.cs.ucl.ac.uk/gecco2007/docs/p3323.pdf,['JR Koza '],Introduction to genetic programming,2007,120
+
+genetic programming,http://gpbib.pmacs.upenn.edu/gecco2008/docs/p2299.pdf,['JR Koza '],Introduction to genetic programming: tutorial,2008,21
+
+sentiment analysis,http://ijcai13.org/files/tutorial_slides/tf4.pdf,['R Feldman'], Sentiment Analysis Tutorial,2013,2
+
+sentiment analysis,https://personal.eur.nl/frasincar/papers/TKDE2016/tkde2016.pdf,"['K Schouten', 'F Frasincar']",Survey on aspect-level sentiment analysis,2015,417
+
+visualization,https://dl.acm.org/doi/abs/10.1145/632716.632806,"['N Gershon', 'S Card', ' SG Eick ']",Information visualization tutorial,1999,30
+
+visualization,http://disi.unitn.it/~p2p/RelatedWork/Matching/a10-katifori.pdf,"['A Katifori', 'C Halatsis', 'G Lepouras', 'C Vassilakis… ']",Ontology visualization methods—a survey,2007,596
+
+visualization,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4959790/,"['L Zhou', 'CD Hansen']",A survey of colormaps in visualization,2015,93
+
+visualization,http://people.stat.sc.edu/hansont/stat730/multivis-report-winnie.pdf,['WWY Chan '], A survey on multivariate data visualization,2006,88
+
+authentication,https://ieeexplore.ieee.org/abstract/document/4445/,['GJ Simmons '],A survey of information authentication,1988,167
+
+authentication,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.185.746&rep=rep1&type=pdf,"['J Clark', 'J Jacob']", A survey of authentication protocol literature,1997,223
+
+approximation algorithm,https://pubsonline.informs.org/doi/full/10.1287/opre.26.4.681,"['BR Marks', ' GP Wright ']",A general inner approximation algorithm for nonconvex mathematical programs,1978,680
+
+approximation algorithm,https://pure.itu.dk/ws/files/38198304/rt613_pham.pdf,"['N Pham', 'R Pagh']",A near-linear time approximation algorithm for angle-based outlier detection in high-dimensional data,2012,129
+
+approximation algorithm,https://ieeexplore.ieee.org/iel7/6287639/8600701/08792058.pdf,['J Garcia'],Approximation algorithms for the vertex k-center problem: Survey and experimental evaluation,2019,4
+
+image retrieval,https://arxiv.org/pdf/1608.03811,['J Mitro '],Content-based image retrieval tutorial,2016,10
+
+image retrieval,http://www.seco.tkk.fi/publications/2002/hyvonen-styrman-saarela-ontology-based-image-retrieval-2002.pdf,"['E Hyvönen', ' S Saarela', ' A Styrman', 'K Viljanen']", Ontology-Based Image Retrieval.,2003,224
+
+image retrieval,https://www.academia.edu/download/45970442/Content_Based_Image_Retrieval_Survey20160526-29818-1llo2j3.pdf,"['M Rehman', 'M Iqbal', 'M Sharif', 'M Raza']", Content based image retrieval: survey,2012,98
+
+virtual machine,http://web.eecs.umich.edu/~prabal/teaching/eecs582-w11/readings/Gol74.pdf,['RP Goldberg '],Survey of virtual machine research,1974,1434
+
+intrusion detection,http://www.mathcs.richmond.edu/~dszajda/classes/cs334/papers/lunt.pdf,['TF Lunt'],A survey of intrusion detection techniques,1993,611
+
+intrusion detection,https://ieeexplore.ieee.org/abstract/document/4693640/,"['F Sabahi', 'A Movaghar']",Intrusion detection: A survey,2008,203
+
+multi-agent systems,https://digital.csic.es/bitstream/10261/131364/4/CJ2014_57%286%29799-824.pdf,"['J Cerquides', 'A Farinelli', ' P Meseguer… ']",A tutorial on optimization for multi-agent systems,2014,33
+
+multi-agent systems,https://ieeexplore.ieee.org/iel7/6287639/6514899/08352646.pdf,"['A Dorri', 'SS Kanhere', 'R Jurdak']",Multi-agent systems: A survey,2018,147
+
+local search,https://www.sciencedirect.com/science/article/pii/0377221796000070,['M Pirlot'],General local search methods,1996,398
+
+local search,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.397.7105&rep=rep1&type=pdf,"['T Benoist', ' B Estellon', 'F Gardi', ' R Megel', ' K Nouioua ']",Localsolver 1. x: a black-box local-search solver for 0-1 programming,2011,62
+
+local search,https://www.academia.edu/download/45682770/j.cor.2005.07.02820160516-14766-h1tpe6.pdf,"['P Galinier', 'A Hertz']",A survey of local search methods for graph coloring,2006,242
+
+pattern recognition,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.5487&rep=rep1&type=pdf,"['A Baraldi', 'P Blonda']",A survey of fuzzy clustering algorithms for pattern recognition. I,1999,501
+
+pattern recognition,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.4128&rep=rep1&type=pdf,"['S Antani', 'R Kasturi', 'R Jain']","A survey on the use of pattern recognition methods for abstraction, indexing and retrieval of images and video",2002,496
+
+pattern recognition,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.379.6962&rep=rep1&type=pdf,"['A Baraldi', 'P Blonda']",A survey of fuzzy clustering algorithms for pattern recognition. II,1999,278
+
+bayesian network,http://learning.eng.cam.ac.uk/zoubin/papers/vietri.pdf,['Z Ghahramani'],Learning dynamic Bayesian networks,1997,727
+
+bayesian network,https://apps.dtic.mil/sti/pdfs/ADA401153.pdf,['ML Krieg '],A tutorial on Bayesian belief networks,2001,92
+
+bayesian network,http://cig.fi.upm.es/articles/2014/Bielza-and-Larranaga-2014-Discrete-Bayesian-classifiers.pdf,"['C Bielza', 'P Larranaga']",Discrete Bayesian network classifiers: A survey,2014,200
+
+bayesian network,https://en.cnki.com.cn/Article_en/CJFDTotal-BJLG201312001.htm,['H Yingping '],Survey on Bayesian network development and application,2013,6
+
+anomaly detection,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.819.3445&rep=rep1&type=pdf,"['L Akoglu', 'C Faloutsos']","Anomaly, event, and fraud detection in large network datasets",2013,65
+
+anomaly detection,http://icdm2011.cs.ualberta.ca/downloads/ICDM2011_anomaly_detection_tutorial.pdf,"['S Chawla', 'V Chandola']", Anomaly Detection: A Tutorial,2011,3
+
+anomaly detection,https://arxiv.org/pdf/1402.0856,"['H Huang', 'H Al']",Network traffic anomaly detection,2014,22
+
+anomaly detection,https://www.gta.ufrj.br/~alvarenga/files/CPE826/Ahmed2016-Survey.pdf,"['M Ahmed', 'AN Mahmood', 'J Hu']",A survey of network anomaly detection techniques,2016,674
+
+energy efficiency,https://oatao.univ-toulouse.fr/13283/1/mastelic_13283.pdf,"['T Mastelic', 'A Oleksiak', 'H Claussen', 'I Brandic… ']",Cloud computing: Survey on energy efficiency,2014,278
+
+information theory,https://books.google.com/books?hl=en&lr=&id=eTXlN0LRiFgC&oi=fnd&pg=PA1&dq=information+theory+tutorial&ots=eWF2RrICMF&sig=dvZDqeFGEau9AiUP0Uf-aAu1XP0,"['I Csiszár', ' PC Shields ']",Information theory and statistics: A tutorial,2004,714
+
+information theory,https://arxiv.org/pdf/1802.05968,['JV Stone'],Information theory: a tutorial introduction,2015,139
+
+information theory,http://117.239.25.194:7000/jspui/bitstream/123456789/1338/1/priliminary%20and%20content.pdf,['S Kullback '], Information theory and statistics,1997,11502
+
+performance,http://onlinepubs.trb.org/onlinepubs/nchrp/nchrp_syn_284.pdf,['G Huber '], Performance survey on open-graded friction course mixes,2000,138
+
+mutual information,https://link.springer.com/content/pdf/10.1007/978-3-540-85053-3_27.pdf,"['B Gierlichs', 'L Batina', ' P Tuyls', 'B Preneel']",Mutual information analysis,2008,626
+
+query processing,https://dl.acm.org/doi/pdf/10.1145/376284.375800,"['PJ Haas', 'JM Hellerstein']",Online query processing: a tutorial,2001,16
+
+query processing,http://www.cs.princeton.edu/courses/archive/spring16/cos598F/survey-db-mapreduce.pdf,"['C Doulkeridis', 'K Nørvåg']",A survey of large-scale analytical query processing in MapReduce,2014,302
+
+query processing,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.8681&rep=rep1&type=pdf,"['IF Ilyas', 'G Beskales', 'MA Soliman']",A survey of top-k query processing techniques in relational database systems,2008,978
+
+query processing,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.576.4580&rep=rep1&type=pdf,"['A Gounaris', 'NW Paton', 'AAA Fernandes… ']",Adaptive query processing: A survey,2002,101
+
+constraint satisfaction problem,https://www.researchgate.net/profile/Moshe_Vardi/publication/2595366_Constraint_Satisfaction_and_Database_Theory_a_Tutorial/links/09e41511f80417c949000000/Constraint-Satisfaction-and-Database-Theory-a-Tutorial.pdf,['MY Vardi'],Constraint satisfaction and database theory: a tutorial,2000,60
+
+constraint satisfaction problem,http://ro.uow.edu.au/cgi/viewcontent.cgi?article=1470&context=infopapers,"['L Zhang', 'SK Lau']",Constructing university timetable using constraint satisfaction programming approach,2005,61
+
+ubiquitous computing,http://stephen.voida.com/uploads/Teaching/Teaching/H566%20Syllabus.pdf,['J Krumm'], Ubiquitous computing fundamentals,2018,371
+
+global optimization,https://www.researchgate.net/profile/Mohamed_Mourad_Lafifi/post/Which_optimization_platform_including_AIMMS_GAMS_LINGO_AMPL_is_the_easiest_to_learn/attachment/59d6484879197b80779a2fa3/AS:466279757815810@1488181165307/download/go_masa-jan09.pdf,['JD Pintér'], Global optimization: scientific and engineering case studies,2006,95
+
+global optimization,https://epubs.siam.org/doi/abs/10.1137/0324060,"['S Geman', 'CR Hwang']",Diffusions for global optimization,1986,367
+
+global optimization,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1.6833&rep=rep1&type=pdf,['SA Vavasis '],Complexity issues in global optimization: a survey,1995,110
+
+global optimization,https://books.google.com/books?hl=en&lr=&id=yBDaBwAAQBAJ&oi=fnd&pg=PA1&dq=global+optimization+survey&ots=NpgOPwtCLD&sig=1TSB_i6QQykb01fwgzxEShs4whA,"['R Horst', 'PM Pardalos']", Handbook of global optimization,2013,1493
+
+global optimization,https://enluzhou.gatech.edu/papers/GO_Survey_final.pdf,"['J Hu', ' Y Wang', 'E Zhou', 'MC Fu', 'SI Marcus']",A survey of some model-based methods for global optimization,2012,35
+
+social network,https://www2012.universite-lyon.fr/proceedings/nocompanion/TUTO_06.pdf,['Y Zheng'], Tutorial on location-based social networks,-1,109
+
+user experience,https://dl.acm.org/doi/abs/10.1145/2523429.2523491,['L Arhippainen '],A tutorial of ten user experience heuristics,2013,23
+
+gaussian mixture model,https://escholarship.org/content/qt1rb70972/qt1rb70972.pdf,['ID Dinov'],Expectation maximization and mixture modeling tutorial,2008,62
+
+gaussian mixture model,https://www.sciencedirect.com/science/article/pii/S1077314214000113,"['Z Chen', 'T Ellis']",A self-adaptive Gaussian mixture model,2014,92
+
+artificial neural network,http://metalab.uniten.edu.my/~abdrahim/mitm613/Jain1996_ANN%20-%20A%20Tutorial.pdf,"['AK Jain', 'J Mao', ' KM Mohiuddin ']",Artificial neural networks: A tutorial,1996,3313
+
+artificial neural network,https://www.igi-global.com/chapter/artificial-neural-networks-tutorial/113093,['C Gallo'],Artificial neural networks tutorial,-1,16
+
+artificial neural network,https://www.sciencedirect.com/science/article/pii/S2405844018332067,"['OI Abiodun', 'A Jantan', 'AE Omolara', ' KV Dada… ']", State-of-the-art in artificial neural network applications: A survey,2018,303
+
+artificial neural network,http://algos.inesc-id.pt/projectos/projects/efiann/FCT/r05.pdf,"['J Misra', 'I Saha']",Artificial neural networks in hardware: A survey of two decades of progress,2010,601
+
+artificial neural network,https://www.sciencedirect.com/science/article/pii/000510989290053I,"['KJ Hunt', 'D Sbarbaro', ' R Żbikowski', 'PJ Gawthrop']",Neural networks for control systems—a survey,1992,2482
+
+artificial neural network,https://ruidera.uclm.es/xmlui/bitstream/handle/10578/18939/hecho_201701.pdf?sequence=1&isAllowed=y,"['AP Marugán', 'FPG Márquez', 'JMP Perez… ']",A survey of artificial neural network in wind energy systems,2018,137
+
+artificial neural network,http://www.cee.uma.pt/morgado/down/Survey_ANN_NCA_Style_v2.pdf,"['D Baptista', 'F Morgado']",A survey of artificial neural network training tools,2013,38
+
+fpga,https://www.academia.edu/download/4035760/10.1.1.94.737.pdf,"['S Brown', 'J Rose']",FPGA and CPLD architectures: A tutorial,1996,454
+
+fpga,https://dl.acm.org/doi/abs/10.1561/1000000005,"['I Kuon', ' R Tessier', 'J Rose']", FPGA architecture: Survey and challenges,2008,692
+
+fpga,https://dl.acm.org/doi/abs/10.1561/1000000003,"['D Chen', 'J Cong', ' P Pan ']", FPGA design automation: A survey,2006,206
+
+fpga,http://arantxa.ii.uam.es/~die/%5BLectura%20FPGA%20Architecture%5D%20FPGA%20architectural%20research.%20A%20survey.pdf,['S Brown'],FPGA architectural research: a survey,1996,87
+
+fpga,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.460.8485&rep=rep1&type=pdf,"['J Zhu', 'P Sutton']",FPGA implementations of neural networks–a survey of a decade of progress,2003,283
+
+game theory,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.993.5024&rep=rep1&type=pdf,"['S Shen', ' G Yue', ' Q Cao', 'F Yu']", A survey of game theory in wireless sensor networks security,2011,79
+
+digital library,http://repository.fue.edu.eg/xmlui/bitstream/handle/123456789/3491/7253.pdf?sequence=1&isAllowed=y,"['IH Witten', 'D Bainbridge', 'DM Nichols']", How to build a digital library,2009,717
+
+recommender system,https://www.researchgate.net/profile/Dietmar_Jannach/publication/252068960_Tutorial_Recommender_Systems/links/572251ad08aee491cb32fda3.pdf,"['D Jannach', 'G Friedrich']", Tutorial: recommender systems,2013,73
+
+recommender system,https://dl.acm.org/doi/abs/10.1145/1376616.1376776,['JA Konstan'],Introduction to recommender systems,2008,64
+
+recommender system,https://dl.acm.org/doi/abs/10.1145/2792838.2792840,"['H Steck', ' R van Zwol', 'C Johnson']",Interactive recommender systems: Tutorial,2015,28
+
+recommender system,https://dl.acm.org/doi/abs/10.1145/2645710.2645778,"['I Guy', 'W Geyer']",Social recommender system tutorial,2014,12

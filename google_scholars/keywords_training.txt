@@ -1,0 +1,122 @@
+data mining
+subgraph counting
+deep learning
+neural network
+Database Management Systems
+Computer Graphics
+Process mining
+big data
+Generative Adversarial Networks
+cyber security
+Geographic Information Systems
+convolutional neural network
+machine learning
+artificial neural network
+deep learning
+mathematical optimization
+time complexity
+computer vision
+image segmentation
+recurrent neural network
+algorithm
+reinforcement learning
+quantum computing
+approximation algorithm 
+support vector machine 
+natural language processing
+error correction code 
+supervised learning 
+computational complexity theory
+linear programming 
+autoencoder
+robotics 
+stochastic gradient descent
+speech recognition
+neural network 
+travelling salesman problem 
+k-means clustering 
+quantum algorithm 
+gradient descent 
+convex optimization 
+feedforward neural network 
+greedy algorithm 
+knapsack problem 
+artificial intelligence 
+pattern recognition 
+information theory 
+combinatorial optimization 
+cryptography 
+robot
+unsupervised learning 
+computational complexity 
+apache spark 
+low-density parity-check code 
+feature learning 
+object detection 
+dimensionality reduction 
+bellman equation 
+numerical analysis 
+genetic algorithm 
+splitting method
+coding theory
+public-key cryptography
+hyperparameter optimization
+content-based image retrieval
+compressed sensing
+convolutional code
+optical character recognition
+cloud computing
+fast fourier transform
+multi-objective optimization
+parallel computing
+iterative method
+linear code
+q-learning
+scale-invariant feature transform
+dynamic programming
+hamming code
+quantum cryptography
+optimization problem
+semi-supervised learning
+post-quantum cryptography
+stochastic optimization
+feature selection
+finite element method
+feature detection
+randomized algorithm
+k-nearest neighbor algorithm
+backpropagation
+facial recognition system
+constraint programming
+complexity
+federated learning
+deepfake
+block code
+computer network
+vertex cover
+sorting algorithm
+clique problem
+binary search algorithm
+mobile robot
+statistical classification
+ensemble learning
+exact algorithm
+optimal control
+anomaly detection 
+low-rank approximation
+model check
+scheduling
+fuzzy logic
+mobile agent
+label transition system
+bayesian network
+decision tree
+query language
+hash function
+machine translation
+data structure
+random forest
+bipartite graph
+markov chain
+feature vector
+pareto front
