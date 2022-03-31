@@ -10,6 +10,11 @@ import joblib
 import re
 import csv
 
+import sys
+import json
+
+import pdb
+
 '''
 Writes and saves the results of the features
     Parameters:
@@ -68,20 +73,22 @@ Writes and saves the results of prediction that is classified as a 'good' paper
     Parameters:
             the list of keywords to be classified from google scholars
 '''
-def save_tutorials(keyword_list, file_name):
-    for k in keyword_list:
-        data_list, other_data = get_properties(k)
-        other_data_np = np.array(other_data)
-        url_res_idx = get_urls(data_list, other_data_np[:, 0])
-        with open(file_name, 'a', encoding="utf-8") as file:
-            writer = csv.writer(file)
-            for idx in url_res_idx:
-                row = [k]
-                row = row + other_data[idx]
-                print(other_data[idx])
-                writer.writerow(row)
+def get_tutorials(k, file_name=None):
+    data_list, other_data = get_properties(k)
+
+    if len(other_data) == 0:
+        return []
+
+    other_data_np = np.array(other_data)
+    url_res_idx = get_urls(data_list, other_data_np[:, 0])
+
+    results = [other_data[i] for i in url_res_idx]
+    return results
+
 
 '''
+Warning: Google Scholar will block IP if requests are being sent too fast
+
 Returns the sum of two decimal numbers in binary digits.
 
     Parameters:
@@ -103,11 +110,10 @@ def get_features(keyword, is_survey):
     words = keyword.split()
 
     headers = {'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36"}
-    # result = requests.get(url, headers = headers)
 
-    # soup = BeautifulSoup(result, 'html.parser')
     result = requests.get(url, headers=headers)
-    soup = BeautifulSoup(result.text)
+    soup = BeautifulSoup(result.text, features='html.parser')
+    # pdb.set_trace()
 
     all_features = []
     other_features = []
@@ -288,14 +294,21 @@ def get_features(keyword, is_survey):
 if __name__ == '__main__':
     # df = pd.read_csv('./new_keywords.csv')
     # kw_list = df['name']
-    kw_list = ['data mining']
+    # kw_list = ['data mining']
 
     # print("Num keywords: ", len(kw_list))
-    if (len(kw_list)) == 0:
-        exit()
+    # if (len(kw_list)) == 0:
+    #     exit()
 
     # num_keywords = len(kw_list)
 
-    save_tutorials(kw_list, 'new_tutorials_website.csv')
+    # for k in kw_list:
+    keyword = sys.argv[1]
+    top_tutorials = get_tutorials(keyword)
+
+    # print(f"Found {len(top_tutorials)} tutorials for", k)
+    # print(top_tutorials)
+    print(json.dumps(top_tutorials))
+    # save_tutorials(kw_list, 'new_tutorials_website.csv')
 
 # uses classifier to find suitable documents ("classified as good")

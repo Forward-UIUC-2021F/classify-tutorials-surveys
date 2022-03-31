@@ -1,3 +1,5 @@
+This branch is the one used in the "Living Encyclopedia" website (as of March 31 2022)
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
