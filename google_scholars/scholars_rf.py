@@ -73,17 +73,32 @@ Writes and saves the results of prediction that is classified as a 'good' paper
     Parameters:
             the list of keywords to be classified from google scholars
 '''
-def get_tutorials(k, file_name=None):
+def add_annotation(tutorials):
+    res = [{
+        'url': t[0],
+        'authors': t[1],
+        'title': t[2],
+        'year': t[3],
+    } for t in tutorials]
+
+    return res
+
+    
+def get_tutorials(k, annotate_data=False):
     data_list, other_data = get_properties(k)
 
     if len(other_data) == 0:
         return []
 
-    other_data_np = np.array(other_data)
+    other_data_np = np.array(other_data, dtype=object)
     url_res_idx = get_urls(data_list, other_data_np[:, 0])
 
     results = [other_data[i] for i in url_res_idx]
-    return results
+
+    if annotate_data:
+        return add_annotation(results)
+    else:
+        return results
 
 
 '''
